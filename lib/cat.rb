@@ -16,10 +16,4 @@ class Cat
   def self.all
     @@all
   end
-  
-  def self.create(name)
-    cat = self.new(name)
-    cat.name = name
-    cat
-  end
 end
