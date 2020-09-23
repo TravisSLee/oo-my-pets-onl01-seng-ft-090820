@@ -46,10 +46,10 @@ class Owner
   end
   
   def walk_dogs
-    @pets.map do |types, doggos|
-     if types == :dogs  
-       doggos.each do |dog|
-        dog.mood = "happy"
+     @pets.collect do |species, instances|
+      if species == :dogs
+        instances.each do |dog|
+          dog.mood = "happy"
         end
       end
     end
