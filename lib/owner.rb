@@ -49,7 +49,7 @@ class Owner
      @pets.collect do |species, instances|
       if species == :dogs
         instances.each do |dog|
-          dog.mood = "happy"
+          @mood = "happy"
         end
       end
     end
