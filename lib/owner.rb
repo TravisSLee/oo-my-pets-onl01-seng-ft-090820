@@ -10,7 +10,7 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    @pets = {:dogs => [], :cats => []}
+   # @pets = {:dogs => [], :cats => []}
   end
   
   def say_species
@@ -34,7 +34,7 @@ class Owner
   end
   
   def dogs
-    Cat.all.select { |dogs| dogs.owner == self}
+    Dog.all.select { |dogs| dogs.owner == self}
   end
   
   def buy_cat(cat_name) 
