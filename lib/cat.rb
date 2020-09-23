@@ -18,6 +18,6 @@ class Cat
   end
   
   def self.create(name)
-    self.new(name)
+    @@all << self.new(name)
   end
 end
