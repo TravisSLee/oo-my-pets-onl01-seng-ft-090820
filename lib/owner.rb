@@ -48,7 +48,7 @@ class Owner
   def walk_dogs
     @pets.each do |type, doggo|
      if type == :dogs  
-      dog.mood = "happy"
+      doggo.mood = "happy"
       end
     end
   end
