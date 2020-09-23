@@ -10,7 +10,7 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
-    @pets = {:dogs => [], :cats => []}
+   # @pets = {:dogs => [], :cats => []}
   end
   
   def say_species
@@ -46,7 +46,7 @@ class Owner
   end
   
   def walk_dogs
-      
+      Dog.mood = "happy"
   end
   
   def feed_cats
@@ -63,6 +63,8 @@ class Owner
   end
   
   def list_pets
+    
+    
     "I have #{owner.dogs.length} dog(s), and #{Cat.all.length} cat(s)."
   end
   
