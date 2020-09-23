@@ -30,7 +30,7 @@ class Owner
   
   def cats 
     @pets[:cats].each do |cat|
-      cat
+      puts cat
     end
   end
   
