@@ -67,7 +67,7 @@ class Owner
   end
   
   def list_pets
-    puts "I have #{@owner.dogs.length} dog(s), and #{@owner.cats.length}"
+    puts "I have #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length}"
   end
   
 end
