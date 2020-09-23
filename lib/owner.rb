@@ -58,18 +58,13 @@ class Owner
   end
   
   def sell_pets
-     @pets.map do |species, names|
-      names.map do |pet|
-        pet.mood = "nervous"
-      end
-      names.clear
-    end
+    
   end
   
   def list_pets
     
     
-    "I have #{owner.dogs.length} dog(s), and #{Cat.all.length} cat(s)."
+    "I have #{self.dogs.length} dog(s), and #{self.cats.length} cat(s)."
   end
   
 end
