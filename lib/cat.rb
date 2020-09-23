@@ -17,7 +17,7 @@ class Cat
     @@all
   end
   
-  def self.create
+  def self.create(name)
     self.new(name)
   end
 end
